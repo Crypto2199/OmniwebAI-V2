@@ -1,58 +1,46 @@
-/* الخط العام */
+/* إعدادات أساسية */
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
   color: #222;
   transition: background 0.5s, color 0.5s;
 }
 
-/* الوضع الليلي */
-body.dark {
-  background: linear-gradient(to bottom, #121212, #1e1e1e);
-  color: #f5f5f5;
+.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f1f1f1;
 }
 
-.dark .hero {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.dark input, .dark select {
-  background: #222;
-  color: white;
-  border: 1px solid #555;
-}
-
-.dark .tool-card {
-  background: #1f1f1f;
-  color: #eee;
-}
-
-header.hero {
-  padding: 2em 1em;
+header {
   text-align: center;
-  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5em 1em;
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-header.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.4em;
+.dark header {
+  background: rgba(0, 0, 0, 0.3);
 }
 
-header.hero p {
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+}
+
+header p {
   font-size: 1.1em;
   margin: 0;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .controls {
   margin-top: 1em;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 select, button {
@@ -64,57 +52,65 @@ select, button {
 }
 
 #toggleDark {
-  background: #111;
-  color: #fff;
+  background: #333;
+  color: white;
 }
 
-.filters {
+input#searchInput {
+  display: block;
+  margin: 1.5em auto;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.dark input#searchInput {
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* أزرار التصنيفات */
+.category-filters {
   text-align: center;
-  padding: 1em;
+  margin-bottom: 20px;
 }
 
-.filters button {
+.category-filters button {
   margin: 5px;
   padding: 10px 16px;
-  border: none;
-  border-radius: 20px;
   background: #007bff;
   color: white;
+  border: none;
+  border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.filters button:hover, .filters button.active {
+.category-filters button:hover {
   background: #0056b3;
 }
 
-#searchInput {
-  display: block;
-  margin: 1.2em auto;
-  padding: 12px;
-  width: 80%;
-  max-width: 500px;
-  font-size: 1em;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 4px rgba(0,0,0,0.05);
-}
-
-.tools-grid {
+/* أدوات */
+.tools-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
   padding: 1em;
 }
 
 .tool-card {
-  width: 260px;
-  background: #fff;
+  background: white;
   border-radius: 15px;
+  width: 260px;
   padding: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   transition: transform 0.2s;
   text-align: left;
 }
@@ -123,37 +119,43 @@ select, button {
   transform: translateY(-5px);
 }
 
+.dark .tool-card {
+  background: #1a1a1a;
+  color: #eee;
+}
+
 .tool-card h3 {
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .tool-card img {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
 }
 
 .tool-card p {
   font-size: 0.95em;
   opacity: 0.9;
+  margin: 8px 0;
 }
 
 .tool-card a {
   display: block;
-  margin-top: 10px;
   text-align: center;
-  background: #28a745;
-  color: white;
+  margin-top: 12px;
   padding: 8px;
-  border-radius: 8px;
+  background: #0f9d58;
+  color: white;
   text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
 }
 
 .tool-card a:hover {
-  background: #1e7e34;
+  background: #0c7c43;
 }
