@@ -8,6 +8,38 @@
     "category": "chat"
   },
   {
+    "key": "deepseek",
+    "name": "DeepSeek Chat",
+    "desc": "روبوت دردشة ذكي يعتمد على الذكاء الاصطناعي من DeepSeek.",
+    "logo": "logos/deepseek.png",
+    "link": "https://chat.deepseek.com",
+    "category": "chat"
+  },
+  {
+    "key": "lovable",
+    "name": "Lovable",
+    "desc": "منصة لإنشاء مواقع ويب مذهلة باستخدام الذكاء الاصطناعي.",
+    "logo": "logos/lovable.png",
+    "link": "https://lovable.dev",
+    "category": "website"
+  },
+  {   
+    "key": "bolt",
+    "name": "Bolt",
+    "desc": "أنشئ تطبيقات ذكاء اصطناعي بسرعة دون كتابة كود.",
+    "logo": "logos/bolt.png",
+    "link": "https://bolt.new",
+    "category": "builder"
+  },
+  { 
+    "key": "grok",
+    "name": "Grok",
+    "desc": "مساعد ذكاء اصطناعي من X (Twitter) بإجابات مرحة وذكية.",
+    "logo": "logos/grok.png",
+    "link": "https://grok.com",
+    "category": "chat"
+  },
+  {
     "key": "claude",
     "name": "Claude",
     "desc": "دردشة آمنة من Anthropic.",
