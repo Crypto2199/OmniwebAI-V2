@@ -16,14 +16,6 @@
     "category": "chat"
   },
   {
-    "key": "bard",
-    "name": "Bard",
-    "desc": "مساعد ذكي من Google.",
-    "logo": "logos/bard.png",
-    "link": "https://bard.google.com",
-    "category": "chat"
-  },
-  {
     "key": "gemini",
     "name": "Gemini",
     "desc": "ذكاء متعدد الوسائط من Google.",
